@@ -15,38 +15,97 @@ Our idea on home based automation can be broadly classified into categories:
 
 Ideas:
 Minimization of time required for detecting repairs:
-IoT makes machine to machine speaking possible, which helps in reducing time to detect repairs in components and then inform to the concerned technicians in-order to call them to rectify the damage. The idea here is to use sensors in-order accumulate required data  from required electrical, electronic and mechanical  components and then make required computations to predict whether they are in proper working conditions.
+IoT makes machine to machine speaking possible, which helps in reducing time to detect repairs in components and then inform to the
+concerned technicians in-order to call them to rectify the damage. The idea here is to use sensors in-order accumulate required data
+from required electrical, electronic and mechanical  components and then make required computations to predict whether they are in
+proper working conditions.
 
 Example:
 Let’s take the case of Air Conditioner.
-	In an AC, a temperature sensor can be placed inside AC in-order to check whether the room temperature is in accordance with the temperature user wants. A pressure sensor can be placed inside the AC working unit to check whether the pressure levels inside the AC is maintained at required rate (corresponding to temperature user wants). The data from temperature and pressure sensors are transferred to cloud where a soft-ware computes whether data inferred is in correspondence to conditions which user wants. In-case of any anomaly in the computed, the data is transferred automatically to the corresponding service center via cloud in-order to inform them about the fault. While computing for anomaly for an AC, other parameters such as temperature outside the building and also the volume of the room in which Ac is placed must be taken into account, since the time required to achieve required conditions varies in accordance with temperature outside and also the volume of the room in which AC is to produce cooling effect. Therefore three more components, namely a temperature sensor for calculating temperature outside the building, and information about room volume must also be delivered to the cloud. Since cloud receives data from AC’s, a unique batch id is provided to each AC in-order to differentiate between various AC’s inside the commercial buildings.
-  Thus time required for detecting repairs and informing service companies and then technicians from service companies checking the AC in-order to identify the fault can be skipped and directly we can fast forward to finding solution of the problem which occurred.
+	In an AC, a temperature sensor can be placed inside AC in-order to check whether the room temperature is in accordance with
+	the temperature user wants. A pressure sensor can be placed inside the AC working unit to check whether the pressure levels
+	inside the AC is maintained at required rate (corresponding to temperature user wants). The data from temperature and pressure
+	sensors are transferred to cloud where a soft-ware computes whether data inferred is in correspondence to conditions which
+	user wants. In-case of any anomaly in the computed, the data is transferred automatically to the corresponding service center
+	via cloud in-order to inform them about the fault. While computing for anomaly for an AC, other parameters such as
+	temperature outside the building and also the volume of the room in which Ac is placed must be taken into account, since the
+	time required to achieve required conditions varies in accordance with temperature outside and also the volume of the room in
+	which AC is to produce cooling effect. Therefore three more components, namely a temperature sensor for calculating
+	temperature outside the building, and information about room volume must also be delivered to the cloud. Since cloud receives
+	data from AC’s, a unique batch id is provided to each AC in-order to differentiate between various AC’s inside the commercial
+	buildings.
+  Thus time required for detecting repairs and informing service companies and then technicians from service companies checking the AC
+  in-order to identify the fault can be skipped and directly we can fast forward to finding solution of the problem which occurred.
+  
 
 
 Another example is that of checking the leakage in liquid and gas pipes inside the commercial building:
-	One of the major causes of fire accidents in commercial buildings is due to leakage of gas from gas pipes and leakages such as those from oil and petrol carrying pipes and so on. This problem can be solved by placing acoustic sensors which can detect leakages through faint sounds and vibrations caused by leakages, or by using pressure sensors based on the principle that major pressure changes occurs in places where leakages occur. The data from these sensors are transferred to cloud. In cloud, applications are written which compares the data acquired with the normal preset standard conditions and makes computations for presence of any irregularities. In-case any anomaly is detected, the information is immediately conveyed through the cloud to the concerned authorities through mobile apps which are designed for this purpose and linked with the cloud or through other means such as transferring data to required server where anomalies are to be recorded and information from that server are transferred to required authorities by various means.
-  Thus leakages can be detected at early stages and required service operation can be done, thereby reducing the probability of accidents to occur.
+	One of the major causes of fire accidents in commercial buildings is due to leakage of gas from gas pipes and leakages such as
+	those from oil and petrol carrying pipes and so on. This problem can be solved by placing acoustic sensors which can detect
+	leakages through faint sounds and vibrations caused by leakages, or by using pressure sensors based on the principle that
+	major pressure changes occurs in places where leakages occur. The data from these sensors are transferred to cloud. In cloud,
+	applications are written which compares the data acquired with the normal preset standard conditions and makes computations
+	for presence of any irregularities. In-case any anomaly is detected, the information is immediately conveyed through the cloud
+	to the concerned authorities through mobile apps which are designed for this purpose and linked with the cloud or through
+	other means such as transferring data to required server where anomalies are to be recorded and information from that server
+	are transferred to required authorities by various means.
+	
+  	Thus leakages can be detected at early stages and required service operation can be done, thereby reducing the probability of accidents to occur.
 
 Smarter devices inside the commercial building using IoT:
 
-Earlier we have discussed how we can minimize the time required for error detection using IoT, for which we studied the examples of AC and leakage detection unit. Now, we can go a step further on how to improve the functionality of a device in good working condition even further using IoT and provide more customer satisfaction (since commercial building is considered).
+Earlier we have discussed how we can minimize the time required for error detection using IoT, for which we studied the examples of AC
+and leakage detection unit. Now, we can go a step further on how to improve the functionality of a device in good working condition
+even further using IoT and provide more customer satisfaction (since commercial building is considered).
 
 1. Temperature control:
-	Temperature control can be achieved by using temperature sensors which detect the temperature at various rooms inside the building and these sensors should be connected to AC’s which are placed in those rooms by direct machine to machine communication or through an intermediate cloud server. Thus temperature can be adjusted according to weather and room conditions in such a manner to create pleasant atmosphere inside the building. (Various sensors which can be used to detect temperature and the process of how they can be interconnected with AC machine through cloud taking into account variances caused by atmospheric temperature and room volume, is discussed already in previous section).
+	Temperature control can be achieved by using temperature sensors which detect the temperature at various rooms inside the
+	building and these sensors should be connected to AC’s which are placed in those rooms by direct machine to machine
+	communication or through an intermediate cloud server. Thus temperature can be adjusted according to weather and room
+	conditions in such a manner to create pleasant atmosphere inside the building. (Various sensors which can be used to detect
+	temperature and the process of how they can be interconnected with AC machine through cloud taking into account variances
+	caused by atmospheric temperature and room volume, is discussed already in previous section).
 2. Building Guider:
-	Nowadays, there are increasing number of skyscrapers which are being built around. Usually these commercial buildings have hundreds of shops (sometimes even thousands). Sometimes, even a day is not enough to look at all the shops. In such cases, customers may wander about aimlessly looking for shops which offer them the product they require. In such, their phones could be used as a medium through which they get directions.
-Example:
-	Once a customer comes inside the show room, he could get connected to the commercial buildings’ cloud (which is accessible from only within the building). Once he gets connected to that building’s specific cloud, he could get access to the information of the shops present in each floor and the direction through which he can reach the shop and also provide all the other required information about the building. Also, mobile phones can be a medium through which arrival and departure times of customers can be maintained, which can be used for calculating parking toll (incase the customers uses individual vehicles) and also for security purpose.
+	Nowadays, there are increasing number of skyscrapers which are being built around. Usually these commercial buildings have
+	hundreds of shops (sometimes even thousands). Sometimes, even a day is not enough to look at all the shops. In such cases,
+	customers may wander about aimlessly looking for shops which offer them the product they require. In such, their phones could
+	be used as a medium through which they get directions.
+	Example:
+	Once a customer comes inside the show room, he could get connected to the commercial buildings’ cloud (which is accessible
+	from only within the building). Once he gets connected to that building’s specific cloud, he could get access to the
+	information of the shops present in each floor and the direction through which he can reach the shop and also provide all the
+	other required information about the building. Also, mobile phones can be a medium through which arrival and departure times
+	of customers can be maintained, which can be used for calculating parking toll (incase the customers uses individual vehicles)
+	and also for security purpose.
 
 
 3. Fire control:
-Heat sensors and infrared sensors can be placed at required places to detect heat levels inside the buildings. The data from the heat sensors and infrared sensors are continuously updated to cloud where they are processed in real time and checked whether they are in permissible limits. Infrared (IR) flame detectors monitor the infrared spectral band for specific patterns given off by hot gases. These are sensed using a specialized fire-fighting thermal signalling (TIC), a type of thermographic camera. False alarms can be caused by other hot surfaces and background thermal radiation in the area. Water on the detector's lens will greatly reduce the accuracy of the detector, as will exposure to direct sunlight. A single-frequency IR flame detector is typically sensitive to wavelengths around 4.4 micrometers, which is a spectral characteristic peak of hot carbon dioxide as is produced in a fire. The usual response time of an IR detector is 3–5 seconds. When the data from fire sensors and heat exceed permissible limits, alarm signals are sent to sensors placed in fire suppressing units like natural gas line or water line.
+	Heat sensors and infrared sensors can be placed at required places to detect heat levels inside the buildings. The data from
+	the heat sensors and infrared sensors are continuously updated to cloud where they are processed in real time and checked
+	whether they are in permissible limits. Infrared (IR) flame detectors monitor the infrared spectral band for specific patterns
+	given off by hot gases. These are sensed using a specialized fire-fighting thermal signalling (TIC), a type of thermographic
+	camera. False alarms can be caused by other hot surfaces and background thermal radiation in the area. Water on the detector's
+	lens will greatly reduce the accuracy of the detector, as will exposure to direct sunlight. A single-frequency IR flame
+	detector is typically sensitive to wavelengths around 4.4 micrometers, which is a spectral characteristic peak of hot carbon
+	dioxide as is produced in a fire. The usual response time of an IR detector is 3–5 seconds. When the data from fire sensors
+	and heat exceed permissible limits, alarm signals are sent to sensors placed in fire suppressing units like natural gas line
+	or water line.
 
 4. Air Filter:
-•	High-efficiency particulate arresting (HEPA) system is the one of the best air filter systems available in the market. Filters meeting the HEPA standard have many applications, including use in medical facilities, automobiles, aircraft and homes. To qualify as HEPA by US government standards, an air filter must remove (from the air that passes through) 99.97% of particles that have a size of 0.3 µm.
-•	HEPA filters are composed of a mat of randomly arranged fibers. The fibers are typically composed of fiberglass and possess diameters between 0.5 and 2.0 micrometers. Key factors affecting its functions are fiber diameter, filter thickness, and face velocity. The pollutant particles are trapped (they stick to a fiber) through a combination of the following three mechanisms:
+•	High-efficiency particulate arresting (HEPA) system is the one of the best air filter systems available in the market. Filters
+	meeting the HEPA standard have many applications, including use in medical facilities, automobiles, aircraft and homes. To
+	qualify as HEPA by US government standards, an air filter must remove (from the air that passes through) 99.97% of particles
+	that have a size of 0.3 µm.
+	
+•	HEPA filters are composed of a mat of randomly arranged fibers. The fibers are typically composed of fiberglass and possess
+	diameters between 0.5 and 2.0 micrometers. Key factors affecting its functions are fiber diameter, filter thickness, and face
+	velocity. The pollutant particles are trapped (they stick to a fiber) through a combination of the following three mechanisms:
+
 •	Interception- Impaction – Diffusion
-•	All these mechanisms can be controlled by connecting this device to IOT, So that depending on the level of pollution rate, the movement of these fiber mats and their face velocity can be varied, so that less power consumption can be achieved
+
+•	All these mechanisms can be controlled by connecting this device to IOT, So that depending on the level of pollution rate, the
+	movement of these fiber mats and their face velocity can be varied, so that less power consumption can be achieved.
+	
 
 Conclusion:
 These are our ideas for establishing home based automation using IoT space with Raspberry pi.
